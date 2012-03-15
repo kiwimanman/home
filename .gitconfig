@@ -1,0 +1,7 @@
+[user]
+	name = Keith Stone
+	email = kstone@whitepages.com
+[merge]
+	tool = vimdiff
+[core]
+	excludesfile = /home/kstone/.gitignore
