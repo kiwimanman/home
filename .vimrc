@@ -2,6 +2,8 @@
 :set incsearch
 :set hlsearch
 :set cindent
+:set list
 :set nu
 :set sw=2
-
+:set ai
+:set ts=2

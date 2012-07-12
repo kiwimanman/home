@@ -36,7 +36,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -81,6 +81,10 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:$HOME/dev/bin"
+eval "$(rbenv init -)"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
